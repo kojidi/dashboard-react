@@ -39,6 +39,7 @@
                 display: flex;
                 align-items: center;
                 padding: 5px;
+                border-radius: 5px;
                 cursor: pointer;
 
                 &:hover {
@@ -46,16 +47,40 @@
                 }
 
                 .icon {
-                    font-size: 22px;
+                    font-size: 18px;
                     color: #7451f8;
                 }
 
                 span {
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 500;
                     color: #888;
                     margin-left: 5px;
                 }
+            }
+        }
+    }
+
+    .bottom {
+
+        padding: 0 15px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .color-option {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid #7451f8;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                background-color: whitesmoke;
+            }
+
+            &:nth-child(2) {
+                background-color: #333;
             }
         }
     }
