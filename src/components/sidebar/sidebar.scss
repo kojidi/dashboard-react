@@ -1,0 +1,62 @@
+.sidebar {
+    flex: 1;
+    border-right: 0.5px solid rgb(235, 235, 235);
+    min-height: 100vh;
+
+    .top {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            color: rebeccapurple;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    hr {
+        border: none;
+        border-bottom: 0.5px solid rgb(235, 235, 235);
+    }
+
+    .center {
+        padding: 10px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            .title {
+                font-size: 0.8rem;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ece8ff;
+                }
+
+                .icon {
+                    font-size: 22px;
+                    color: #7451f8;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #888;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
